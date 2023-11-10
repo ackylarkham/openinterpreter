@@ -12,12 +12,15 @@ RUN apt-get update && \
     fonts-takao \
     language-pack-ja-base \
     language-pack-ja \
-    locales locale-gen ja_JP.UTF-8 \
+    locales \
     python3.11 \
     python3-pip \
     sudo \
     tzdata \
     xdg-user-dirs \
+    && \
+# ロケールの生成
+    locale-gen ja_JP.UTF-8 \
     && \
 # Clean up
     apt-get clean && \
