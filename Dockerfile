@@ -29,7 +29,7 @@ RUN apt-get update && \
 # 日本語フォルダ名を英語に改名
 RUN LANG=C xdg-user-dirs-update --force
 
-# open interpreterをインストール
+# Open Interpreterをインストール
 RUN pip3 install open-interpreter
 
 # sudo可能な一般ユーザーを追加
